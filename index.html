@@ -1,67 +1,285 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Chris Greenwood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 </head>
+
 <body>
-    <h1 id="main_title">Chris Greenwood</h1>
-    <p>
-        <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/22769907_10108219971892465_9121254886259307611_o.jpg?_nc_cat=0&_nc_eui2=v1%3AAeFoV2ez7GNRrX_s4g-RK4DxfoI2FEhaZzvu82AyNuOVe5eB9tjmWZneTUfLwDsqjyfLDflH-FyagUCSX4ETfezhjdv4YHnNs7eULC-czrreHg&oh=04509d181fd7031ae1dbd29fd1a3e577&oe=5B6DA1C6", alt="Geaux Tigers"/>
-    </p>
+
+    <h1 id="main_title">
+        Chris Greenwood
+    </h1>
+    
+    <div id="main_photo">
+        <img class="center" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/22769907_10108219971892465_9121254886259307611_o.jpg?_nc_cat=0&oh=7d6c869e5259c2cc6e331277efdffe70&oe=5B6DA1C6", alt="Shredding the Air Guitar" />
+    </div>
+
     <h3>
-        Here's some Gibberish about Chris
+        Who is this guy, anyway?
     </h3>
-    <p>
-        I was born in Baton Rouge, Louisiana to a couple of right-brained engineers, but forged my own left-brained path as a theatre major at LSU. In Los Angeles, I worked steadily performing classics on stage and in the background on film/tv for nearly eight years.  
-    </p>
-    <p>
-        After growing tired of the starving part of the starving artist lifestyle, I moved to Austin where I was introduced to the world of software development by way of working as a recruiter for Python and Go developers. I was also introduced to the world of uncle-dom by my new niece, Eleanor.
-    </p>
-    <p>
-        I found myself constantly more interested in the jobs I was hunting than the job I was doing, and was baffled how "attention to detail" could be a negative trait, so I decided to leave Sales behind and joined the Data Analysis and Visualization Boot Camp through UT to learn all the excellent technologies I'd been scouring resumes for previously.
-    </p>
-    <p>
-        I've always considered myself a storyteller, and I'm excited to see what kind of stories I can unveil through the use of Data Analysis!
-    </p>
+    
+    <div class="container" id="bio">
+        
+        <div class="row">
+
+            <div class="col">
+                <p> 
+                    I was born in Baton Rouge, Louisiana to a couple of right-brained engineers, but forged my own left-brained path as a theatre major at LSU. In Los Angeles, I worked steadily performing classics on stage and in the background on film/tv for nearly eight years.  
+                </p>
+                <p> 
+                    After growing tired of the starving part of the starving artist lifestyle, I moved to Austin where I was introduced to the world of software development by way of working as a recruiter for Python and Go developers. I was also introduced to the world of uncle-hood by my new niece, Eleanor.
+                </p>
+                <p> 
+                    I found myself constantly more interested in the jobs I was hunting than the job I was doing, and was baffled how "attention to detail" could be a negative trait, so I decided to leave Sales behind and joined the Data Analysis and Visualization Boot Camp through UT to learn all the excellent technologies I'd been scouring resumes for previously.
+                </p>                    
+                <p> 
+                    I've always considered myself a storyteller, and I'm excited to see what kind of stories I can unveil through the use of Data Analysis!
+                </p>                    
+            </div>
+
+        </div>
+
+    </div>
+
+    <h3>
+        Did I see him on TV one time?
+    </h3>
+
+    <div class="container" style="margin-top:40px;" id="photo_gallery">
+            
+        <div class="row form-group">
+            
+            <div class="col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Making Musical Magic with the Blue Jean Committee</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                            <img id="blue_jean" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/12513729_10105578863235385_7433547972402979924_o.jpg?_nc_cat=0&oh=d6bfbc757cbdb009d0dbfd1f5f5c1e7d&oe=5B6BEEA1", alt="Hanging out in the studio with the Blue Jean Committee", class="panel-image-preview" />
+                        <label for="toggle-3"></label>
+                    </div>
+                    <input type="checkbox" id="toggle-3" class="panel-image-toggle">
+                    <div class="panel-body">
+                        <p>I play the younger version of the studio owner who gets punched in the mouth for coining the now-iconic bandname.</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <h4>Documentary Now! S01E07-08</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Mourning Winston's Basketball Career</h3>
+                    </div>
+                    <div class="panel-image">
+                        <img id="new_girl" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/1465715_10103005577879865_846227578_o.jpg?_nc_cat=0&oh=ccfea7bc80d779b3b884383989014c27&oe=5B6234EE", alt="Mourning Winston's Baskeball Career", class="panel-image-preview" />
+                        <label for="toggle-1"></label>
+                    </div>
+                    <input type="checkbox" id="toggle-1" class="panel-image-toggle">
+                    <div class="panel-body">
+                        <p>During a flashback in which Winston reveals his short-lived career as a basketball player in Latvia, I show up as one of his teammates lookin on his injury with worry.</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <h4>New Girl</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row form-group">
+
+            <div class="col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Gunning for Employee of the Month</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                            <img id="last_man" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/1795141_10103119276576765_36050562_o.jpg?_nc_cat=0&oh=b28dd0af54ae0deedba72f19e71e2493&oe=5B6AA1DC", alt="Last Man Standing, episode 'Stud Muffin'", class="panel-image-preview" />
+                        <label for="toggle-2"></label>
+                    </div>
+                    <input type="checkbox" id="toggle-2" class="panel-image-toggle">
+                    <div class="panel-body">
+                        <p>Tim Allen's eldest daughter gets into a tiff with this store owner, and I am just an oblivious employee trying to maintain that retail veneer of enthusiasm.</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <h4>Last Man Standing 02/28/2014</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Popping up in Old Memories</h3>
+                    </div>
+                    <div class="panel-image">
+                        <img id="true_detective" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/11745847_10104814214263055_6895192514254686163_n.jpg?_nc_cat=0&oh=a5cf897d0bb9ecfff68ae389b757caba&oe=5B67C1ED", alt="Screenshot of a screen shot of True Detective Season 2", class="panel-image-preview" />
+                        <label for="toggle-4"></label>
+                    </div>
+                    <input type="checkbox" id="toggle-4" class="panel-image-toggle">
+                    <div class="panel-body">
+                        <p>I'm told this is an important element to the season. I wouldn't actually know because I never got that far into watching it. Loved season one, though.</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <h4>True Detective Season 2</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row form-group">
+
+            <div class="col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Pledging Greendale's Best-and-Only Fraternity</h3>
+                    </div>
+                    <div class="panel-image">
+                        <img id="family_pic" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/487484_10102102550533905_484865175_n.jpg?_nc_cat=0&oh=68b693b0a3dda00dac9370d72bc434b7&oe=5B27B8D5", alt="Delta Cube at attention", class="panel-image-preview" />
+                        <label for="toggle-5"></label>
+                    </div>
+                    <input type="checkbox" id="toggle-5" class="panel-image-toggle">
+                    <div class="panel-body">
+                        <p>Proud member of the first and only pledge class of Greendale Community College's first and only fraternity, the Delta Cubes.</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <h4>Community Season 3</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Chanting for Blood at a Hydra Fight Club</h3>
+                    </div>
+                    <div class="panel-image">
+                        <img id="family_pic" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/12065824_10105128132947495_1251025998761102554_n.jpg?_nc_cat=0&oh=0229081b9a21951f7114ee1366d2059e&oe=5B6FE525", alt="The first rule of Hydra Fight Club is you do not talk about Hydra Fight Club", class="panel-image-preview" />
+                        <label for="toggle-6"></label>
+                    </div>
+                    <input type="checkbox" id="toggle-6" class="panel-image-toggle">
+                    <div class="panel-body">
+                        <p>The first rule of Hydra Fight Club is that nobody is safe. The second rule of Hydra Fight Club is just kidding, series regulars are totally safe.</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <h4>Agents of S.H.I.E.L.D. Season 3</h4>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>       
+    
     <h3>
         Find Chris on Social Media:
     </h3>
-    <ul class="light_text" id="social_media">
-        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/greenwoodgiant">Chris Greenwood</a></li>
-        <li><strong>Github:</strong> <a href="https://github.com/greenwoodgiant">greenwoodgiant</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/itscgwood/">Christopher Greenwood</a></li>
-        <li><strong>Twitter:</strong> <a href="https://twitter.com/itschrisgwood?lang=en">itschrisgwood</a></li>
-    </ul>
+    
+    <div class="social_media">
+        
+        <div class="btn-group-lg" role="group" aria-label="...">
+            <button type="button" class="btn btn-lg">
+                    <a href="https://www.facebook.com/greenwoodgiant">facebook</a>
+            </button>
+            <button type="button" class="btn btn-lg">
+                    <a href="https://github.com/greenwoodgiant">github</a>
+            </button>
+            <button type="button" class="btn btn-lg">
+                <a href="https://www.linkedin.com/in/itscgwood/">linked_in</a>
+            </button>
+            <button type="button" class="btn btn-lg">
+                    <a href="https://twitter.com/itschrisgwood?lang=en">twitter</a>
+            </button>
+        </div>
+    
+    </div>
+
     <h3>
-        Here are Some Things I Liked
+        What is he working on?
     </h3>
-    <table class="light_text" border="1"> 
-            <tr> 
-              <th>Stage Roles Played</th> 
-              <th>TV Sets Worked On</th> 
-              <th>DnD Characters Created</th> 
-            </tr> 
-            <tr> 
-              <td>The Nurse/Capulet,<br>'Romeo and Juliet'</td> 
-              <td>Documentary Now!<br>(Gentle and Soft)</td> 
-              <td>Lachlan Kettlemash,<br>Dwarven Brewmaster/Paladin</td> 
-            </tr> 
-            <tr> 
-              <td>Duke Orsino/Malvolio,<br>'Twelfth Night'</td> 
-              <td>Community<br>(Delta Cube)</td> 
-              <td>Smashnow,<br>Halfogre Barbarian</td> 
-            </tr> 
-             <tr> 
-              <td>Voice 3,<br>'Betty's Summer Vacation'</td> 
-              <td>Key and Peele<br>(Pirate Chanty)</td> 
-              <td>Ciaran Cernoonan,<br>Tiefling Bard/Monk</td> 
-            </tr>  
-          </table>
+
+    <div class="container" style="margin-top:25px;" id="photo_gallery">
+            
+        <div class="row form-group">
+            
+            <div class="col-xs-6 col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Roguelike (Python)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                            <img id="roguelike" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/30127290_10109005832596315_8374895286115368960_n.jpg?_nc_cat=0&oh=bc459dda099ccce91f2cec15b757d5cf&oe=5B3416E4", alt="Roguelike screencap", class="panel-image-preview" />
+                        <label for="toggle-7"></label>
+                    </div>
+                    <input type="checkbox" id="toggle-7" class="panel-image-toggle">
+                    <div class="panel-body">
+                        <p>Learning all sorts of new and interesting capabilities of python through the construction and personalization of a Roguelike console game.</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="https://github.com/greenwoodgiant/roguelike">
+                            <h4>See Roguelike on Github</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">DM Tools (Python)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                            <img id="roguelike" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/30261231_10109005925160815_3162455574767992832_n.jpg?_nc_cat=0&oh=f2139a7c4ee7794757094f3ad99fed03&oe=5B68AF9F", alt="DM's Tools screencap", class="panel-image-preview" />
+                        <label for="toggle-8"></label>
+                    </div>
+                    <input type="checkbox" id="toggle-8" class="panel-image-toggle">
+                    <div class="panel-body">
+                        <p>Tools for Dungeon Masters to retrieve information on Spells and Monsters from an online Fifth Edition API, as well as a standalone program which prints a fully random level-one character to the console.</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="https://github.com/greenwoodgiant/DM-Tools">
+                            <h4>See DM Tools on Github</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Pyber Analysis (Pandas)</h3>
+                    </div>
+                    <div class="panel-image hide-panel-body">
+                            <img id="pyber" src="https://raw.githubusercontent.com/greenwoodgiant/Pyber/master/output_11_0.png", alt="Pyber Thumbnail", class="panel-image-preview" />
+                        <label for="toggle-9"></label>
+                    </div>
+                    <input type="checkbox" id="toggle-9" class="panel-image-toggle">
+                    <div class="panel-body">
+                        <p>Data analysis of User / Ride information for fictional rideshare company Pyber, with insights gained.</p>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="https://greenwoodgiant.github.io/Pyber/">
+                            <h4>See Pyber Analysis on Github</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>    
 
 </body>
 </html>
